@@ -4,14 +4,24 @@
     <meta name="robots" content="nofollow, noindex">
   
     <style>
-      body {
+
+      :root {
+        --main-color:linear-gradient(0.25turn, #305e72, #1f7b80, #30145c);
+        --font: 
+      }
+      [theme=dark]
+     body {
+        color-scheme: light dark; /* Enabling light mode and dark mode */
+        color: light-dark(#333, #fff); /* Text light and dark colors */
+        background-color: light-dark(#fff, #222); /* Background light and dark colors*/
         display:flex;
         flex-wrap:wrap;
         padding: 30px;
         gap: 20px;
         align-items:center;
         justify-content:space-between;
-        background-image: linear-gradient(0.25turn, #305e72, #1f7b80, #30145c);
+        /* background-image: var(--main-color); */
+        font-family: var(--font);
       }
       .container {
         display:flex;
